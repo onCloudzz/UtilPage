@@ -1,0 +1,73 @@
+body {
+    background-color: beige;
+}
+
+
+.hidden {
+    display: none;
+}
+
+#sleep {
+    background-color: aqua;
+}
+
+#hover {
+    background-color: yellow;
+}
+
+#clicked {
+    background-color: green;
+}
+
+.container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+    flex-direction: row;
+}
+
+.button-click {
+    padding: 10px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button-reset {
+    padding: 10px;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    flex-direction: column;
+}
+
+.progress-container {
+    height: 0.8rem;
+    width: 32rem;
+    border-radius: 0.4rem;
+  
+    background: #000;
+  }
+  
+  .progress-container .progress {
+    height: 100%;
+    width: 0;
+    border-radius: 0.4rem;
+  
+    background: #ff4754;
+  
+    transition: width 0.1s ease;
+  }

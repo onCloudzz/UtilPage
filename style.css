@@ -2,33 +2,30 @@ body {
     background-color: beige;
 }
 
-
-.hidden {
-    display: none;
-}
-
-#sleep {
-    background-color: aqua;
-}
-
-#hover {
-    background-color: yellow;
-}
-
-#clicked {
-    background-color: green;
+h1 {
+    font: 40px sans-serif;
 }
 
 .container-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 10px;
+    height: 70px;
+    padding: 5px;
     flex-direction: row;
 }
 
-.button-click {
+.pomodoro-text {
+    font: 20px sans-serif;
+    color: green;
+}
+
+.pomodoro-cnt{
+    font: 30px sans-serif;
+
+}
+
+#button-startstop {
     padding: 10px;
     margin: 10px;
     background-color: red;
@@ -36,6 +33,15 @@ body {
     border: none;
     cursor: pointer;
 }
+
+.start{
+    background-color: green;
+}
+
+.stop{
+    background-color: red;
+}
+
 
 .button-reset {
     padding: 10px;
@@ -46,7 +52,7 @@ body {
     cursor: pointer;
 }
 
-.container-counter {
+.container-pomodoro {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +64,6 @@ body {
     height: 0.8rem;
     width: 32rem;
     border-radius: 0.4rem;
-  
     background: #000;
   }
   

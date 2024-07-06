@@ -4,25 +4,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>JS to Chrome</title>
+        <title>Pomodoro</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class = "container-counter">
-            <h1>Counter</h1>
-                <div class = "container-button">
-                    <button class="button-click">Click!</button>
-                    <button class="button-reset">Reset!</button>
-                </div>
-            <h3 class="cnt">0</h3>
-        </div>
-        <p class="cnt">0</p>
+    
 
+    <div class = "container-pomodoro">
+        <h1>Pomodoro</h1>
+        <h2 class = "pomodoro-text">25:00</h2>
         <div class="progress-container">
             <div class="progress"></div>
         </div>
-         
-
-        <script src="app.js"></script>
+        <div class = "container-button">
+            <button id="button-startstop">start!</button>
+            <button class="button-reset">Reset!</button>
+        </div>
+        <h3 class="pomodoro-cnt">0</h3>
+    </div>
+    <script src="app.js"></script>
     </body>
 </html>

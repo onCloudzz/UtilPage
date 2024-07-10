@@ -2,12 +2,7 @@ const ButtonClick = document.querySelector('#button-startstop');
 const ButtonReset = document.querySelector('.button-reset');
 const PomodoroText = document.querySelector('.pomodoro-text');
 const PomodoroCnt = document.querySelector('.pomodoro-cnt');
-
 const progressbar = document.querySelector(".progress");
-
-const changeProgress = (progress) => {
-  progressbar.style.width = `${progress}%`;
-};
 
 // pomodoro app
 // 1. start/stop button
@@ -36,6 +31,10 @@ let timer;
 let time = 1500;
 let cnt = 0;
 let progress = 0;
+
+function changeProgress(progress){
+  progressbar.style.width = `${progress}%`;
+};
 
 function setTimerText(time){
   const minutes = Math.floor(time / 60);
@@ -90,7 +89,7 @@ function startStop(){
   }
 }
 
-const reset = () => {
+function reset(){
   clearInterval(timer);
   isRunning = false;
   isWorking = true;

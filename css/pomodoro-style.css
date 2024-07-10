@@ -16,14 +16,11 @@ h1 {
 }
 
 .pomodoro-text {
-    font: 20px sans-serif;
+    font: 40px sans-serif;
     color: green;
 }
 
-.pomodoro-cnt{
-    font: 30px sans-serif;
 
-}
 
 #button-startstop {
     padding: 10px;
@@ -50,6 +47,22 @@ h1 {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.pomodoro-cnt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    flex-direction: column;
+}
+
+.pomodoro-cnt-text {
+    font: 20px sans-serif;
+}
+
+.pomodoro-cnt{
+    font: 30px sans-serif;
 }
 
 .container-pomodoro {
